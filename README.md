@@ -16,5 +16,5 @@ buffer类是用string粗劣代替的，下一步是实现buffer类，使用链�
 定时器不打算使用timerfd 系统自带的定时套接字，打算仿照libevent使用小根堆的形式来实现  
 上面的这两步等有空再弄  
 
-接下来是支持多线程部分，即单个listener 然后将做好的连接放入其他的eventloop中
+接下来是支持多线程部分，即单个listener 然后将做好的连接放入其他的eventloop中  
 将连接和IO彻底进行分离，目前是连接和IO都是在主event_loop线程中的  
